@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>DUS</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="/admin/">admin</a></h1>
+        </div>
+
+        <div>
+            {% for post in posts %}
+            		Title: {{post.title}} <br>
+            		Content: {{post.text}} <br>
+            		Author: {{post.author}} <br>
+            		Date: {{post.publication_date}} <br>
+            			<br><br>
+           {%endfor%}
+        </div>
+    </body>
+</html>
